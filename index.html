@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<!-- meta tags, links to css, etc. -->
-<title>DIG 245 Everyone ♥ Math</title>
+  <!-- meta tags, links to css, etc. -->
+  <title>DIG 245 Everyone ♥ Math</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-<body>
 
-<!-- visible content goes here -->
-<h1>DIG 245 Everyone ♥ Math</h1>
+<body>
+  <br>
+  <h1 class="text-center">DIG 245 Everyone ♥ Math</h1>
+  <br>
+
+  <div class="container">
+
+    <div class="text-center" id="operator">
+      <h2> Addition! </h2>
+    </div>
+    <br>
+
+    <div class="text-center" id="box">
+      <form>
+        Jimmy has <input id="firstnumber" placeholder="number" style="width:100px"> apples.
+        Alice gives him <input id="secondnumber" placeholder="number" style="width:100px"> apples.
+      </form>
+
+      <br>
+
+      <button class="btn btn-info" onclick="add()" style="border-radius: 20px">How many apples does Jimmy have?</button>
+      <br>
+      <br>
+      <p>
+        Jimmy has <span id="answer">_____</span> apples.
+      </p>
+    </div>
+
+    <br>
+
+    <div class="text-center" id="operator">
+      <h2> Subtraction! </h2>
+    </div>
+    <br>
+
+    <div class="text-center" id="box">
+      <form>
+        Jimmy has <input id="thirdnumber" placeholder="number" style="width:100px"> apples.
+        Alice steals <input id="fourthnumber" placeholder="number" style="width:100px"> apples from him. </form>
+      <br>
+      <button class="btn btn-info" onclick="subtract()" style="border-radius: 20px">How many apples does Jimmy have left?</button>
+      <br>
+      <br>
+      <p>
+        Jimmy has <span id="answer2">_____</span> apples.
+      </p>
+    </div>
+
+    <br>
+
+    <div class= "text-center" id="box2">
+      <a href="https://www.figma.com/community/file/1156022084377553126">
+        Click here for the Figma file!
+      </a>
+    </div>
+
+    <br>
+
+  </div>
+
+  <script>
+    function add() {
+      var num1, num2, sum;
+      num1 = parseInt(document.getElementById("firstnumber").value);
+      num2 = parseInt(document.getElementById("secondnumber").value);
+      sum = num1 + num2;
+      document.getElementById("answer").innerText = sum;
+    }
+  </script>
+
+  <script>
+    function subtract() {
+      var num3, num4, diff;
+      num3 = parseInt(document.getElementById("thirdnumber").value);
+      num4 = parseInt(document.getElementById("fourthnumber").value);
+      diff = num3 - num4;
+      document.getElementById("answer2").innerText = diff;
+    }
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    console.log("Our two formulas implemented basic addition and subtraction operators in the form of: answer = input 1 +- input 2")
+  </script>
 
 </body>
+
 </html>

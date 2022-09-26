@@ -1,2 +1,45 @@
-
 /* css */
+body {
+  background-color: #ADE67E
+}
+
+h1 {
+  font: "Tahoma";
+  color: green;
+}
+
+h2 {
+  font: "Tahoma";
+  color:white;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-style: bold;
+  text-transform: uppercase;
+}
+
+#box2 {
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    #B7FFF2 0%,
+    #536EFF 50%,
+    #B7FFF2 100%);
+}
+
+#operator {
+  border-radius: 15px;
+  background-color: green;
+  border-radius: 15px;
+}
+
+#box {
+  border-radius: 15px;
+  padding: 30px;
+  border-radius: 15px;
+  background: white;
+
+}
